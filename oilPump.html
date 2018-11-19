@@ -115,12 +115,13 @@
                      <cylinder radius='.1' height='1.75' />
                 </Shape>
                     </Transform>
-                
+                <!-- horizontal supports -->
+                <!-- top -->
                 <Transform translation='.5 -.25 0.5' rotation="0 0 0 0">                <Shape>
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size="1 .2 .2"/>
+                     <Box size="1 .1 .1"/>
                 </Shape>
                     </Transform>
                 
@@ -128,7 +129,7 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size="1 .2 .2"/>
+                     <Box size="1 .1 .1"/>
                 </Shape>
                     </Transform>
                 
@@ -136,7 +137,7 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size=".2 .2 1"/>
+                     <Box size=".1 .1 1"/>
                 </Shape>
                     </Transform>
                 
@@ -144,15 +145,15 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size=".2 .2 1"/>
+                     <Box size=".1 .1 1"/>
                 </Shape>
                     </Transform>
-                
+                <!-- Bottom -->
                 <Transform translation='-.2 -1.54 0' rotation="0 0 1 -.15">                <Shape>
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size=".2 .2 1"/>
+                     <Box size=".1 .1 1"/>
                 </Shape>
                     </Transform>
                 
@@ -160,7 +161,7 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size=".2 .2 1"/>
+                     <Box size=".1 .1 1"/>
                 </Shape>
                     </Transform>
                 
@@ -168,7 +169,7 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size="1.5 .2 .2"/>
+                     <Box size="1.5 .1 .1"/>
                 </Shape>
                     </Transform>
                 
@@ -176,11 +177,92 @@
                     <appearance>
                         <material diffuseColor='0.43 .25 0'></material>
                     </appearance>
-                     <Box size="1.5 .2 .2"/>
+                     <Box size="1.5 .1 .1"/>
+                </Shape>
+                    </Transform>
+                
+                <!-- diaginal supports-->
+                
+                <Transform translation='.33 -1.0 .5' rotation="0 0 1 0.88525">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.43 .25 0'></material>
+                    </appearance>
+                     <Box size="1.8 .1 .1"/>
+                </Shape>
+                    </Transform>
+                
+                <Transform translation='.33 -1.0 -.5' rotation="0 0 1 0.88525">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.43 .25 0'></material>
+                    </appearance>
+                     <Box size="1.8 .1 .1"/>
+                </Shape>
+                    </Transform>
+                
+                 <Transform translation='.66 -1.0 .5' rotation="0 0 1 -0.88525">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.43 .25 0'></material>
+                    </appearance>
+                     <Box size="1.8 .1 .1"/>
+                </Shape>
+                    </Transform>
+                
+                <Transform translation='.66 -1.0 -.5' rotation="0 0 1 -0.88525">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.43 .25 0'></material>
+                    </appearance>
+                     <Box size="1.8 .1 .1"/>
                 </Shape>
                     </Transform>
                 
                 
+            </Group>
+            
+            <Group Def='Pump Head'>
+                
+                <Transform translation='3.7  2.875 0'>
+                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.5 .15 0'></material>
+                    </appearance>
+                    <Box size=".46 1.75 .75"/>
+                </Shape>
+                    </Transform>
+                
+                
+                <Transform translation='3.94 3.56 0' rotation="1 0 0 1.5705">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.5 .15 0'></material>
+                    </appearance>
+                     <cylinder radius='.5' height='.75' />
+                </Shape>
+                    </Transform>
+                
+                <Transform translation='4.07 3.2 0' rotation="0 0 1 .2505">
+                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.5 .15 0'></material>
+                    </appearance>
+                    <Box size=".90 1.0 .75"/>
+                </Shape>
+                    </Transform>
+                
+                <Transform translation='4.12 2.5 0' rotation="0 0 1 -.395">
+                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.5 .15 0'></material>
+                    </appearance>
+                    <Box size=".7 1.0 .75"/>
+                </Shape>
+                    </Transform>
+                
+                <Transform translation='3.86 2. 0' rotation="1 0 0 1.5705">                <Shape>
+                    <appearance>
+                        <material diffuseColor='0.5 .15 0'></material>
+                    </appearance>
+                     <cylinder radius='.4' height='.75' />
+                </Shape>
+                    </Transform>
                 
                 
             </Group>
