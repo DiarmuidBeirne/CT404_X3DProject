@@ -833,7 +833,7 @@
                            fieldOfView='0.985' position='0 8 17' orientation='-1 0 0 .2235'></Viewpoint>
                 
                <Viewpoint id="camera_front" description= 'camera'
-                           fieldOfView='0.985' position="17.14840 -1.13102 -7.69582" orientation="-0.02494 0.98370 -0.17806 2.15104"></Viewpoint>
+                           fieldOfView='0.985' position="16.77863 10.53533 -6.05150" orientation="-0.14601 0.97506 0.16715 2.07615"></Viewpoint>
                 
                 <Viewpoint id="camera_back" description= 'camera'
                            fieldOfView='0.985' position="-15.83151 5.84169 6.12335" orientation="-0.07803 -0.98536 -0.15156 1.06815"></Viewpoint>
@@ -867,12 +867,17 @@
         </div>
     <div class="row">
         <div style="text-align: center; padding-top: 10px;">
-<button onclick="document.getElementById('mainCamera').setAttribute('set_bind','true');">Main Camera</button>
-    <button onclick="document.getElementById('camera_front').setAttribute('set_bind','true');">Front view</button>
+<button class="button-primary" onclick="document.getElementById('mainCamera').setAttribute('set_bind','true');">Main Camera</button>
+    <button class="button-primary" onclick="document.getElementById('camera_front').setAttribute('set_bind','true');">Front view</button>
 
-<button onclick="document.getElementById('camera_back').setAttribute('set_bind','true');">Back view </button>
+<button class="button-primary"  onclick="document.getElementById('camera_back').setAttribute('set_bind','true');">Back view </button>
             </div>
         </div>
+    
+     <div class="row" style="text-align: center;">
+         <h6>Autocad drawing I based my measurements on:</h6>
+         <img src="autocadDrawing.JPG"/>
+    </div>
 
 </body>
 
