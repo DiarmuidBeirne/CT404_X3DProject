@@ -19,8 +19,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
-    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+    <script src="https://www.x3dom.org/download/1.5/x3dom-full.js"></script>
+		<link rel="stylesheet" href="https://www.x3dom.org/download/1.5/x3dom.css">
     </link>
 </head>
 
@@ -42,7 +42,7 @@
                
                 <Transform translation='.5 2.4 0'>
                      <Transform DEF="top_beam">
-                        <Transform translation='-.5 0.475 0' >    
+                        <!--<Transform translation='-.5 0.475 0' >    
                 <Shape>
                     <appearance>
                         <material diffuseColor='0.5 .2 0'></material>
@@ -50,24 +50,24 @@
                     </appearance>
                     <Box size="7 .75 .06"/>
                 </Shape>
-                         </Transform>
+                         </Transform>-->
                          
-                         <Transform translation='-.5 0.475 0.0' >    
+                         <!--<Transform translation='-.5 0.475 0.0' >    
                 <Shape>
                     <appearance>
-                        <material diffuseColor='0.15 .15 0'></material>
+                        <material></material>
                         <ImageTexture url='rust.jpg'/>
                     </appearance>
                     <Box size="6.6 .4 .18"/>
                 </Shape>
-                         </Transform>
-                         
+                         </Transform>-->
+                          
                          
                     
                 
-                <Transform translation='-.5 0.85 0' rotation="1 0 0 1.5705">                <Shape>
+                <!--<Transform translation='-.5 0.85 0' rotation="1 0 0 1.5705">                <Shape>
                     <appearance>
-                        <material diffuseColor='0.5 .2 0'></material>
+                        <material></material>
                         <ImageTexture url='rust4.jpg'/>
                     </appearance>
                     <Box size="7 .75 .06"/>
@@ -82,7 +82,23 @@
                     </appearance>
                     <Box size="7 .75 .06"/>
                 </Shape>
-                    </Transform>
+                    </Transform>-->
+                         <Transform translation='-4 1.8 1.' rotation="0 1 0 1.5708">  
+                             <Transform rotation="1 0 0 1.5708"> <!-- only way i could get this rotated was using 2 transforms-->
+                          <Shape>
+                        <Appearance>
+                            <Material></Material>
+                            <ImageTexture url='rust.jpg'/>
+                        </Appearance>
+                            <Extrusion convex='TRUE' beginCap='TRUE' endCap='FALSE'
+                            crossSection='1 1, 1 1.75, 1.345 1.75,
+                            1.345 1.81, .595 1.81, .595 1.75, .94 1.75,
+                            .94 1, .595 1, .595 .94, 1.345 .94, 1.345 1, 1 1'
+                            spine='0 0 0, 0 7 0' />
+                        </Shape>
+                         </Transform>
+                             </Transform>
+                         
                 
                 <Transform translation='-4 0.48 0' rotation="0 0 0 1.5705">                <Shape>
                     <appearance>
@@ -93,37 +109,30 @@
                     <Box size=".06 .8 .8"/>
                 </Shape>
                     </Transform>
+                         
+                         
+                         <!-- small beam --> 
+                         <Transform translation='-4.38 .58 -1' rotation="1 0 0 1.5708" scale=".58 .2857 .53">  
+                             
+                          <Shape>
+                        <Appearance>
+                            <Material></Material>
+                            <ImageTexture url='rust.jpg'/>
+                        </Appearance>
+                            <Extrusion convex='TRUE' beginCap='TRUE' endCap='FALSE'
+                            crossSection='1 1, 1 1.75, 1.345 1.75,
+                            1.345 1.81, .595 1.81, .595 1.75, .94 1.75,
+                            .94 1, .595 1, .595 .94, 1.345 .94, 1.345 1, 1 1'
+                            spine='0 0 0, 0 7 0' />
+                        </Shape>
+                         </Transform>
+                             
                 
                 
-                <!-- small beam --> 
-                <Transform translation='-3.81 0.04 0' rotation="0 0 0 1.5705">                <Shape>
-                    <appearance>
-                        <material diffuseColor='0.5 .26 0'></material>
-                        <ImageTexture url='rust.jpg'/>
-                    </appearance>
-                    <Box size=".4 .06 2"/>
-                </Shape>
-                    </Transform>
                 
-                
-                <Transform translation='-3.81 -0.36 0' rotation="0 0 0 1.5705">                <Shape>
-                    <appearance>
-                        <material diffuseColor='0.5 .23 0'></material>
-                        <ImageTexture url='rust.jpg'/>
-                    </appearance>
-                    <Box size=".4 .06 2"/>
-                </Shape>
-                    </Transform>
-                
-                 <Transform translation='-3.81 -0.16 0' rotation="0 0 0 0">                <Shape>
-                    <appearance>
-                        <material diffuseColor='0.5 .21 0'></material>
-                        <ImageTexture url='rust.jpg'/>
-                    </appearance>
-                    <Box size=".06 .4 2"/>
-                     <ImageTexture url='rust.jpg'/>
-                </Shape>
-                    </Transform>
+                         
+                         
+              
                 
                 <Transform translation='-3.81 -0.16 1.11' rotation="1 0 0 1.5705">                <Shape>
                     <appearance>
@@ -883,6 +892,10 @@
      <div class="row" style="text-align: center;">
          <h6>Quick Autocad drawing I did for my measurements on:</h6>
          <img src="autocadDrawing.JPG"/>
+         <br><br>
+         <div class="row" style="text-align: center;">
+         <h6>Sketch of Extrustion</h6>
+         <img src="extrusion.JPG"/>
     <br>
     <h6>Skybox is from here: <strong><a href="http://www.custommapmakers.org/skyboxes.php">custommapmakers.org</a></strong></h6>
          </div>
